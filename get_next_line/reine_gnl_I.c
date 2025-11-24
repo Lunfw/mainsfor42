@@ -11,7 +11,7 @@ int	main(void)
 	char	*next_line;
 
 	count = 0;
-	printf("\n\n # ------- BASIC TEST -------\n\n");
+	printf("\n # ------- BASIC TEST -------\n\n");
 	while (count != 5)
 	{
 		fd = open("example.txt", O_RDONLY);
@@ -20,6 +20,7 @@ int	main(void)
 		printf("[%d]  %s\n", count, next_line);
 		next_line = NULL;
 	}
+	printf("\n");
 	/*
 	printf("\n\n # ------- GET_NEXT_LINE -------\n\n");
 	count = 0;
@@ -31,6 +32,7 @@ int	main(void)
 		printf("[%d]  %s\n", count, next_line);
 		next_line = NULL;
 	}
+	printf("\n");
 	*/
 	/*
 	printf("\n\n # ------- ONE NL TEST -------\n\n");
@@ -44,6 +46,7 @@ int	main(void)
 		printf("[%d]  %s\n", count, next_line);
 		next_line = NULL;
 	}
+	printf("\n");
 	*/
 	/*
 	printf("\n\n # ------- MULTIPLE NL TEST -------\n\n');
@@ -55,7 +58,9 @@ int	main(void)
 		count++;
 		printf("[%d]  %s\n", count, next_line);
 		next_line = NULL;
-	}*/
+	}
+	printf("\n");
+	*/
 	free(next_line);
 	close(fd);
 	return (0);
