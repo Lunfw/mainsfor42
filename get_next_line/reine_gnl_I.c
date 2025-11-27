@@ -14,7 +14,7 @@ int	main(void)
 	printf("\n # ------- BASIC TEST -------\n\n");
 	while (count != 5)
 	{
-		fd = open("example.txt", O_RDONLY);
+		fd = open("allexamples/example.txt", O_RDONLY);
 		next_line = get_next_line(fd);
 		count++;
 		printf("[%d]  %s\n", count, next_line);
@@ -26,7 +26,7 @@ int	main(void)
 	count = 0;
 	while (count != 5)
 	{
-		fd = open("example_sustainability.txt", O_RDONLY);
+		fd = open("allexamples/example_sustainability.txt", O_RDONLY);
 		next_line = get_next_line(fd);
 		count++;
 		printf("[%d]  %s\n", count, next_line);
@@ -36,11 +36,10 @@ int	main(void)
 	*/
 	/*
 	printf("\n\n # ------- ONE NL TEST -------\n\n");
-	
 	count = 0;
 	while (count != 5)
 	{
-		fd = open("example_oneNL.txt", O_RDONLY);
+		fd = open("allexamples/example_oneNL.txt", O_RDONLY);
 		next_line = get_next_line(fd);
 		count++;
 		printf("[%d]  %s\n", count, next_line);
@@ -53,7 +52,7 @@ int	main(void)
 	count = 0;
 	while (count != 5)
 	{
-		fd = open("example_multipleNL.txt", O_RDONLY);
+		fd = open("allexamples/example_multipleNL.txt", O_RDONLY);
 		next_line = get_next_line(fd);
 		count++;
 		printf("[%d]  %s\n", count, next_line);
